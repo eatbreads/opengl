@@ -7,8 +7,9 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     myopenglptr = new MyOpenGLWidget(this);
-    setCentralWidget(myopenglptr);
-    myopenglptr->update();  // 手动触发重绘
+    triangleptr = new TriangleWidget(this);
+    setCentralWidget(triangleptr);
+    //myopenglptr->update();  // 手动触发重绘
 
 }
 
